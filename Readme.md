@@ -1,5 +1,7 @@
 # Vite + Typescript + Storybook beta v7 + npm
 
+Environment variables are not working with storybook v7 beta.
+
 ## Install
 
 ```shell
@@ -14,3 +16,5 @@ npm install
 
 npm run storybook
 ```
+
+Open browser at http://localhost:6006/, in the dev tools console search for `process.env.STORYBOOK_TEST =` info log, `STORYBOOK_TEST` is undefined but should be `abcde`.
